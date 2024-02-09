@@ -1,0 +1,30 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+   <data>
+       <variable name="user" type="com.example.User"/>
+   </data>
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <EditText android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Name"
+           android:text="@{user.name}"/>
+       <EditText android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Age"
+           android:text="@{String.valueOf(user.age)}"/>
+       <EditText android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Salary"
+           android:text="@{String.valueOf(user.salary)}"/>
+       <EditText android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="HRA"
+           android:text="@{String.valueOf(user.hra)}"/>
+       <EditText android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Insurance"
+           android:text="@{String.valueOf(user.insurance)}"/>
+   </LinearLayout>
+</layout>
